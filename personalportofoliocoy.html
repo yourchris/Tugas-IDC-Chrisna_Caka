@@ -1,0 +1,164 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal portofolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="coy 1.png" />
+        <a href="#"></a>
+      </div>
+      <div class="nav-links">
+        <a class="selected" href="personalportofoliocoy.html">Home</a>
+        <a href="works.html">works</a>
+        <a href="single-work.html">single work</a>
+        <a href="blog.html">blog</a>
+        <a href="about.html">about</a>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="info">
+        <h1></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          facilis earum magnam placeat nemo? Corrupti, fugit omnis voluptatibus
+          labore atque maiores nam nulla suscipit ipsum nisi laudantium autem
+          voluptate debitis!
+        </p>
+        <button>Download Resume</button>
+      </div>
+      <img src="profilepic.jpg" />
+    </div>
+
+    <script>
+      // Typewriter Effect
+      const text = "Hello, I'm Chris, a Web Developer and a Digital Artist";
+      let index = 0;
+      const speed = 100; // typing speed in milliseconds
+
+      function typeWriter() {
+        const header = document.querySelector(".info h1");
+        if (index < text.length) {
+          header.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      // Clear initial text and start typewriter effect
+      window.onload = () => {
+        document.querySelector(".info h1").innerHTML = "";
+        typeWriter();
+      };
+    </script>
+
+    <div class="recent">
+      <div class="header">
+        <h4>Recent Posts</h4>
+        <a href="blog.html">View All</a>
+      </div>
+      <div class="posts">
+        <div class="post-item">
+          <h3>Photo Manipulation Project</h3>
+          <div class="info">
+            <h5>8 march 2024</h5>
+            <h5>|</h5>
+            <h5>Design, Composition</h5>
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis esse
+            suscipit odio ullam, at beatae quod dolor excepturi quos, ex nisi
+            deleniti harum earum fugiat inventore sint similique tempore
+            dignissimos.
+          </p>
+        </div>
+        <div class="post-item">
+          <h3>Logo Project</h3>
+          <div class="info">
+            <h5>29 december 2022</h5>
+            <h5>|</h5>
+            <h5>Design, Shape</h5>
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis esse
+            suscipit odio ullam, at beatae quod dolor excepturi quos, ex nisi
+            deleniti harum earum fugiat inventore sint similique tempore
+            dignissimos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="separator">
+      <h4>Featured Works</h4>
+    </div>
+
+    <div class="featured">
+      <div class="item">
+        <img src="item-1.png" />
+        <div class="details">
+          <h3>Photoshop Manipulation</h3>
+          <div class="items-info">
+            <div class="year-badge">2024</div>
+            <h4>Photoshop</h4>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            illum reprehenderit dolore officia corporis atque quasi nostrum,
+            eligendi voluptas accusantium, ipsam dolor in explicabo ipsa,
+            exercitationem iusto neque? Quis, velit!
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="item-2.png" />
+        <div class="details">
+          <h3>Logo competition</h3>
+          <div class="items-info">
+            <div class="year-badge">2022</div>
+            <h4>Photoshop</h4>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            illum reprehenderit dolore officia corporis atque quasi nostrum,
+            eligendi voluptas accusantium, ipsam dolor in explicabo ipsa,
+            exercitationem iusto neque? Quis, velit!
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="item-3.png" />
+        <div class="details">
+          <h3>Product Advertising</h3>
+          <div class="items-info">
+            <div class="year-badge">2022</div>
+            <h4>Photoshop</h4>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            illum reprehenderit dolore officia corporis atque quasi nostrum,
+            eligendi voluptas accusantium, ipsam dolor in explicabo ipsa,
+            exercitationem iusto neque? Quis, velit!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="socials">
+        <i class="bx bxl-facebook-square"></i>
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-twitter"></i>
+      </div>
+      <p>Copyright @2024, All rights reserved</p>
+    </footer>
+  </body>
+</html>
